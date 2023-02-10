@@ -60,6 +60,10 @@ export class AuctionItemController {
   }
 
   @Patch('/complete/:id')
+  @ApiCreatedResponse({
+    description: 'The auction item has been successfully completed.',
+  })
+  @ApiBadRequestResponse({ description: 'You cannot complete this item.' })
   @UseGuards(AuthGuard())
   async completeAuctionItem(
     @Param('id', isValidId)
@@ -75,6 +79,10 @@ export class AuctionItemController {
   }
 
   @Get('myItems')
+  @ApiCreatedResponse({
+    description: 'The auction item has been successfully completed.',
+  })
+  @ApiBadRequestResponse({ description: 'You cannot complete this item.' })
   @UseGuards(AuthGuard())
   async getMyAuctionItems(
     @Query() query: ExpressQuery,

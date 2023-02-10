@@ -51,6 +51,14 @@ export class AuctionItemService {
       );
     }
 
+    if (
+      auctionItem.state &&
+      auctionItem.state === 'draft' &&
+      state === 'completed'
+    ) {
+      throw new BadRequestException('You cannot complete a draft auction.');
+    }
+
     auctionItem.state = state;
     auctionItem.save();
 

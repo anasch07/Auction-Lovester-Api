@@ -43,12 +43,35 @@ The `.env` file should be added to your `.gitignore` file to prevent sensitive i
 
 `nest start --watch`
 
+
+
+## Using Swagger
+
+The Nest application includes support for [Swagger](https://swagger.io/), a popular API documentation tool. Swagger provides an interactive documentation and testing interface for your API, allowing you to easily test and debug your API endpoints.
+
+To access the Swagger interface, follow these steps:
+
+1.  Start the Nest application by running `nest start` in the terminal or command prompt.
+2.  Open a web browser and navigate to `http://localhost:3000/api`.
+3.  You should now see the Swagger interface, displaying all the available API endpoints and their specifications.
+
+You can use the Swagger interface to test your API endpoints by sending requests and viewing the responses. This can be a valuable tool for debugging and testing your API before deploying it to production.
+
+We hope this addition helps you use Swagger in your Nest application effectively.
+
+
+
+
+
 ## Troubleshooting
 
 -   If you encounter any issues with the setup or running of the application, please refer to the documentation on the official website.
 -   If the issue persists, feel free to raise an issue on the repository.# Running the Nest Application
 
 This document provides instructions for running the Nest application on a computer. Before you begin, please make sure that you have the necessary software and hardware requirements.e an issue on the repository.
+
+
+
 
 
 ## Conclusion
