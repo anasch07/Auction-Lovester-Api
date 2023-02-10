@@ -1,67 +1,58 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# Running the Nest Application
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+This document provides instructions for running the Nest application on a computer. Before you begin, please make sure that you have the necessary software and hardware requirements.
 
-## Description
+## Requirements
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+-   Operating System: Windows 10, MacOS, or Linux
+-   Processor: Intel Core i5 or equivalent
+-   RAM: 4 GB
+-   Hard Drive: 500 GB
+-   Software: Latest version of [Node.js](https://nodejs.org/en/download/) and [Nest CLI](https://docs.nestjs.com/cli/overview)
 
-## Installation
+## Setup
 
-```bash
-$ npm install
-```
+1.  Clone the latest version of the application from the official repository.
+2.  Open the terminal or command prompt and navigate to the cloned directory.
+3.  Run the following command to install the necessary dependencies:
 
-## Running the app
+Copy code
 
-```bash
-# development
-$ npm run start
+`npm install`
 
-# watch mode
-$ npm run start:dev
+4.  Create a new file named `.env` in the cloned directory.
+5.  Open the `.env` file and add the following lines, replacing the placeholder values with your own values:
 
-# production mode
-$ npm run start:prod
-```
 
-## Test
 
-```bash
-# unit tests
-$ npm run test
+`DB_URI=mongodb://localhost/nest
+JWT_SECRET=secretkey
+JWT_EXPIRES=3600`
 
-# e2e tests
-$ npm run test:e2e
+Note: `DB_URI` is the URL of your MongoDB database, `JWT_SECRET` is the secret key used to sign the JSON Web Tokens, and `JWT_EXPIRES` is the number of seconds after which the tokens will expire.
 
-# test coverage
-$ npm run test:cov
-```
+The `.env` file should be added to your `.gitignore` file to prevent sensitive information from being committed to the repository.
 
-## Support
+## Running the Application
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+1.  Open the terminal or command prompt and navigate to the cloned directory.
+2.  Run the following command to start the application:
 
-## License
 
-Nest is [MIT licensed](LICENSE).
+
+`nest start --watch`
+
+## Troubleshooting
+
+-   If you encounter any issues with the setup or running of the application, please refer to the documentation on the official website.
+-   If the issue persists, feel free to raise an issue on the repository.# Running the Nest Application
+
+This document provides instructions for running the Nest application on a computer. Before you begin, please make sure that you have the necessary software and hardware requirements.e an issue on the repository.
+
+
+## Conclusion
+
+We hope these instructions have helped you run the Nest application successfully. If you have any questions or need further assistance, please don't hesitate to reach out to me.
+
+We appreciate your efforts in using this application and hope it brings value to your project. Have a great day!

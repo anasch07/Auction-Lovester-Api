@@ -2,6 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
 import { User } from '../../auth/schemas/user.schema';
 import { AuctionItem } from '../../auction-item/schemas/auctionItem.schema';
+import { ApiProperty } from '@nestjs/swagger';
 
 @Schema({
   timestamps: true,
